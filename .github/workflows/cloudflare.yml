@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - dev
-      
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -20,5 +20,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 59ab0f165887221cd7839052a1b1f764
           projectName: jennhiller
-          directory: dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}

@@ -1,3 +1,5 @@
+name: Deploy to Cloudflare Pages hosting
+
 on:
   push:
     branches:

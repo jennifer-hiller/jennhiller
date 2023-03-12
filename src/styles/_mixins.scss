@@ -1,0 +1,32 @@
+$breakpoints: (
+	small : 480px,
+	medium: 800px,
+	large : 1024px
+);
+@mixin mq($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+	// If $mq-breakpoint is a key that exists in
+	// $mq-breakpoints, get and use the value
+	@if map-has-key($mq-breakpoints, $mq-breakpoint) {
+		$mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+	}
+	
+	@media screen and (min-width: #{$mq-breakpoint}) {
+		@content;
+	}
+}
+//usage
+// .main    { width: 100%; }
+// .sidebar { width: 100%; }
+
+// @include mq(medium) {
+//   .main    { width: 60%; }
+//   .sidebar { width: 40%; }
+// }
+// @include mq(large) {
+//   .main    { width: 70%; }
+//   .sidebar { width: 30%; }
+// }
+.skeleton-animation {
+	opacity: .7;
+	animation: skeleton-loading 1s linear infinite alternate;
+}

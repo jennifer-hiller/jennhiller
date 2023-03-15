@@ -31,10 +31,22 @@ getToken(appCheck)
       </label>
     </header>
     <RouterView />
+    <footer class="footer">
+      <h6>
+        &copy;{{ new Date().getFullYear() }}
+        <a href="https://www.catloafsoft.com/" target="_blank">
+          Catloaf Software, LLC
+        </a>
+      </h6>
+    </footer>
   </div>
 </template>
 
 <style lang="scss">
+.footer {
+  font-size: 0.85rem;
+  padding: 1rem 0;
+}
 .contents {
   padding: 1.5rem;
 }
@@ -249,6 +261,10 @@ getToken(appCheck)
   }
 }
 @include mq(medium) {
+  .footer {
+    width: 800px;
+    margin: 0 auto;
+  }
   .contents {
     width: 800px;
     margin: 0 auto;

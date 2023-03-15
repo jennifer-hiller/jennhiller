@@ -66,8 +66,8 @@ declare global {
   // eslint-disable-next-line no-var
   var FIREBASE_APPCHECK_DEBUG_TOKEN: boolean | string | undefined;
 }
-// window.FIREBASE_APPCHECK_DEBUG_TOKEN=true;
+window.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
 export const appCheck = initializeAppCheck(app, {
-  provider: new ReCaptchaV3Provider("6LddwFIhAAAAALXSAfqvWEuUoO4sLL5R8PWefkvs"),
+  provider: new ReCaptchaV3Provider("6Ldrk7ckAAAAAEUEP1EYjwLoeRps4AZramp7AAtE"),
   isTokenAutoRefreshEnabled: true,
 });

@@ -1,15 +1,13 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main>
+    <section class="splash">
+      <h1>About</h1>
+    </section>
+    <section class="contents">
+      <p>
+        This site is a single-page app (SPA), written in Vue and hosted on
+        Cloudflare using Firebase features, such as AppCheck and Firestore.
+      </p>
+    </section>
+  </main>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>

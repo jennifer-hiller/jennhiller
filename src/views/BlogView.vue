@@ -52,7 +52,7 @@ function submitHandler(e: Event) {
     blogEntries.value = [];
     setTimeout(() => {
       fetchData();
-    }, 100);
+    }, 1000);
   } catch (e) {
     console.error("Error updating document: ", e);
   }

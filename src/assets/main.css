@@ -3,6 +3,7 @@
 :root {
   --primary-color: #232323;
   --secondary-color: #c6c6c6;
+  --link-color: #860aaf;
   --white: #fff;
   --black: #000;
 }
@@ -12,6 +13,6 @@ body {
   margin: 0;
 }
 a:link, a:visited {
-  color: var(--primary-color);
+  color: var(--link-color);
   text-decoration: none;
 }

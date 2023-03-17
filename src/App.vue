@@ -147,6 +147,22 @@ getToken(appCheck)
   }
 }
 .blog {
+  &__form {
+    border: 1px solid map-get($colors, "black");
+    border-radius: 3px;
+    padding: 1.5rem;
+    &-title,
+    &-contents {
+      display: block;
+      font-family: $primary-font;
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      width: 100%;
+    }
+    &-contents {
+      height: 30vh;
+    }
+  }
   &__entry {
     font-family: $blog-font;
     font-size: 1.2rem;

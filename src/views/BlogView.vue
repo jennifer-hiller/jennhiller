@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import { onAuthStateChanged } from "@firebase/auth";
 import { db } from "@/firebase";
+import { marked } from "marked";
 import {
   query,
   collection,
@@ -50,7 +52,10 @@ onMounted(() => {
                 new Date(doc.data().date.seconds * 1000).toLocaleDateString()
               }}
             </h4>
-            <p class="blog__entry__contents">{{ doc.data().contents }}</p>
+            <div
+              class="blog__entry__contents"
+              v-html="marked.parse(doc.data().contents)"
+            ></div>
           </article>
         </div>
       </div>

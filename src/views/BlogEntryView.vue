@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { db } from "@/firebase";
+import { marked } from "marked";
 import {
   type DocumentData,
   doc,
@@ -52,9 +53,10 @@ onMounted(() => {
                 ).toLocaleDateString()
               }}
             </h4>
-            <p class="blog__entry__contents">
-              {{ blogEntry.data()!.contents }}
-            </p>
+            <div
+              class="blog__entry__contents"
+              v-html="marked.parse(blogEntry.data()!.contents)"
+            ></div>
           </article>
         </div>
       </div>

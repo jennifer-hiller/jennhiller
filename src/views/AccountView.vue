@@ -17,7 +17,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <main class="homepage">
+  <main>
     <section class="splash">
       <h1>Account</h1>
     </section>

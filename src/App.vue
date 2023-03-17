@@ -37,6 +37,12 @@ getToken(appCheck)
         <a href="https://www.catloafsoft.com/" target="_blank">
           Catloaf Software, LLC
         </a>
+        <a href="https://www.linkedin.com/in/jennhi/" target="_blank"
+          ><i class="devicon-linkedin-plain"></i
+        ></a>
+        <a href="https://github.com/jennifer-hiller" target="_blank"
+          ><i class="devicon-github-plain"></i
+        ></a>
       </h6>
     </footer>
   </div>
@@ -44,8 +50,12 @@ getToken(appCheck)
 
 <style lang="scss">
 .footer {
-  font-size: 0.85rem;
+  font-size: 1rem;
   padding: 1rem 0;
+  [class^="devicon"] {
+    font-size: 1.3rem;
+    margin-left: .5rem;
+  }
 }
 .contents {
   padding: 1.5rem;
@@ -138,6 +148,8 @@ getToken(appCheck)
 }
 .blog {
   &__entry {
+    font-family: $blog-font;
+    font-size: 1.2rem;
     padding-top: 1.5rem;
     &:first-child {
       padding: 0;
@@ -150,6 +162,21 @@ getToken(appCheck)
       color: lighten(map-get($colors, "black"), 50%);
       font-size: 0.75rem;
       padding-bottom: 0.5rem;
+    }
+    &__contents {
+      h3,
+      h4,
+      p,
+      ul,
+      ol {
+        padding-bottom: 1.3rem;
+      }
+      h3 {
+        font-size: 1.6rem;
+      }
+      h4 {
+        font-size: 1.3rem;
+      }
     }
   }
 }

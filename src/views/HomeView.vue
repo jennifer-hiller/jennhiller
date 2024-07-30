@@ -8,12 +8,7 @@ onMounted(() => {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Your Source for everything Jennifer Hiller",
-      "url": "https://jennhiller.com",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": 4.4,
-        "reviewCount": 89
-      }
+      "url": "https://jennhiller.com"
     });
   document.head.appendChild(script);
 });

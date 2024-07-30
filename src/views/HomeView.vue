@@ -1,5 +1,17 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import TheFeatures from "@/components/TheFeatures.vue";
+onMounted(() => {
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Your Source for everything Jennifer Hiller",
+      "url": "https://jennhiller.com"
+    });
+  document.head.appendChild(script);
+});
 </script>
 
 <template>

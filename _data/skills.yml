@@ -1,0 +1,29 @@
+- name: HTML
+  level: 95
+  gradient: from-orange-500 to-red-500
+  description: Semantic markup, accessibility, and SEO best practices
+  technologies:
+    - HTML5
+    - Semantic Elements
+    - Web Components
+    - SEO
+- name: CSS
+  level: 90
+  gradient: from-blue-500 to-cyan-500
+  description: Modern layouts, animations, and responsive design
+  technologies:
+    - CSS3
+    - Flexbox
+    - Grid
+    - Animations
+    - Sass
+- name: JavaScript
+  level: 88
+  gradient: from-yellow-500 to-amber-500
+  description: ES6+, DOM manipulation, and interactive experiences
+  technologies:
+    - ES6+
+    - DOM API
+    - Async/Await
+    - Fetch API
+    - Modules

@@ -1,30 +1,27 @@
-- title: E-Commerce Platform
-  description: A fully responsive online shopping platform with product filtering, cart functionality, and smooth animations built with vanilla JavaScript.
-  image: https://images.unsplash.com/photo-1603302576837-37561b2e2302?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGNvZGluZyUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzc0NzM5NTc0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral
+- title: Texts With
+  description: A fully responsive chat tool enabling users to communicate, using AI, with religious figures, authors, and historical figures.
+  image: https://textwith.me/cdn-cgi/image/format=auto,onerror=redirect/img/en/apps-banner.jpg
   tags:
-    - HTML5
-    - CSS3
-    - JavaScript
-    - Responsive
-  live_url: "#"
-  github_url: "#"
-- title: Interactive Dashboard
-  description: A data visualization dashboard featuring dynamic charts, real-time updates, and a modern glassmorphic design using CSS Grid and Flexbox.
-  image: https://images.unsplash.com/photo-1760548425425-e42e77fa38f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NzQ2MjE0MDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral
+    - React/Remix
+    - MaterialUI
+    - TypeScript
+    - Redux
+  live_url: https://textwith.app
+- title: Teachee
+  description: A fully responsive educational tool enabling users to learn, using AI, any chosen subject.
+  image: /assets/images/teachee.png
   tags:
-    - CSS Grid
-    - JavaScript
-    - APIs
-    - Charts
-  live_url: "#"
-  github_url: "#"
-- title: Portfolio Website
-  description: A minimalist portfolio showcasing smooth scroll animations, lazy loading images, and optimized performance for lightning-fast load times.
-  image: https://images.unsplash.com/photo-1763568258338-94886e7533ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBjb2RpbmclMjBzZXR1cHxlbnwxfHx8fDE3NzQ3MDg5OTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral
+    - React/Next
+    - TypeScript
+    - TailwindCSS
+    - OpenAI
+  live_url: https://teachee.org
+- title: Catloaf Art
+  description: A minimalist portfolio showcasing my paintings and ability to design sites from the ground up.
+  image: /assets/images/catloafart.png
   tags:
-    - HTML
-    - CSS Animations
+    - React/Next
+    - Firebase
     - JavaScript
-    - Performance
-  live_url: "#"
-  github_url: "#"
+    - Redux
+  live_url: https://catloaf.art

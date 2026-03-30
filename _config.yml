@@ -4,14 +4,7 @@ url: ""
 baseurl: ""
 markdown: kramdown
 permalink: pretty
-sass:
-  sass_dir: assets/css
-  style: compressed
 collections_dir: .
 exclude:
   - node_modules
-  - src
-  - package.json
-  - postcss.config.mjs
-  - vite.config.ts
   - README.old.md

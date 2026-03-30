@@ -1,9 +1,9 @@
 brand:
-  name: Portfolio
+  name: JennHiller.com
 
 hero:
   headline_prefix: Hi, I'm
-  headline_name: Your Name
+  headline_name: Jennifer Hiller
   subtitle: Web Developer & Site Creator
   description: I craft beautiful, responsive websites using HTML, CSS, and JavaScript. Passionate about creating seamless user experiences and bringing creative ideas to life through code.
   image:
@@ -35,14 +35,11 @@ contact:
   location: San Francisco, CA
 
 social:
-  github: https://github.com
-  linkedin: https://linkedin.com
-  email: mailto:your.email@example.com
+  github: https://github.com/jennifer-hiller
+  linkedin: https://www.linkedin.com/in/jennhi/
 
-footer:
-  brand_name: Portfolio
-  tagline: Creating beautiful web experiences with HTML, CSS, and JavaScript.
-  copyright_label: Portfolio
-  made_with: Made with
-  made_with_suffix: and lots of coffee
-
+forms:
+  web3forms:
+    access_key: a9b30f8f-d2cd-470f-80d3-2daface116b3
+    subject: New portfolio contact form submission
+    from_name: JennHiller.com

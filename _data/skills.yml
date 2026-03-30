@@ -1,5 +1,6 @@
 - name: HTML
   level: 95
+  symbol: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-code2 lucide-file-code-2 size-8 text-white" data-fg-crmd13="1.17:1.3811:/src/app/components/Skills.tsx:56:21:2136:38:e:Icon" data-fgid-crmd13=":r2q:"><path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="m5 12-3 3 3 3"></path><path d="m9 18 3-3-3-3"></path></svg>
   gradient: from-orange-500 to-red-500
   description: Semantic markup, accessibility, and SEO best practices
   technologies:
@@ -9,6 +10,7 @@
     - SEO
 - name: CSS
   level: 90
+  symbol: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panels-top-left size-8 text-white" data-fg-crmd13="1.17:1.3811:/src/app/components/Skills.tsx:56:21:2136:38:e:Icon" data-fgid-crmd13=":r3d:"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
   gradient: from-blue-500 to-cyan-500
   description: Modern layouts, animations, and responsive design
   technologies:
@@ -19,6 +21,7 @@
     - Sass
 - name: JavaScript
   level: 88
+  symbol: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles size-8 text-white" data-fg-crmd13="1.17:1.3811:/src/app/components/Skills.tsx:56:21:2136:38:e:Icon" data-fgid-crmd13=":r41:"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
   gradient: from-yellow-500 to-amber-500
   description: ES6+, DOM manipulation, and interactive experiences
   technologies:

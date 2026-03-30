@@ -1,0 +1,51 @@
+<section id="contact" class="section section--hero">
+  <div class="container">
+    <div class="section-heading">
+      <h2>{{ site.data.site.contact.headline }}</h2>
+      <div class="section-heading__rule"></div>
+      <p>{{ site.data.site.contact.description }}</p>
+    </div>
+    <div class="contact-form-card">
+      <form class="contact-form" data-contact-form method="POST" novalidate>
+        <input
+          type="hidden"
+          name="access_key"
+          value="{{ site.data.site.forms.web3forms.access_key }}"
+        >
+        <input
+          type="hidden"
+          name="subject"
+          value="{{ site.data.site.forms.web3forms.subject }}"
+        >
+        <input
+          type="hidden"
+          name="from_name"
+          value="{{ site.data.site.forms.web3forms.from_name }}"
+        >
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="contact-form__honeypot"
+          tabindex="-1"
+          autocomplete="off"
+        >
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" placeholder="John Doe" required>
+        <label for="email">Your Email</label>
+        <input id="email" name="email" type="email" placeholder="john@example.com" required>
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Tell me about your project..."
+          required
+        ></textarea>
+        <button class="button button--primary button--full" type="submit" data-submit-button>
+          Send Message
+        </button>
+        <p class="contact-form__status" data-form-status aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>

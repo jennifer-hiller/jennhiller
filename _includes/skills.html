@@ -1,0 +1,37 @@
+<section id="skills" class="section section--muted">
+  <div class="container">
+    <div class="section-heading">
+      <h2>My Skills</h2>
+      <div class="section-heading__rule"></div>
+      <p>
+        Specialized in the core technologies of web development, constantly
+        learning and improving my craft.
+      </p>
+    </div>
+    <div class="skills-grid">
+      {% for skill in site.data.skills %}
+        <article class="skill-card" id="skill-{{ skill.name }}">
+          <div class="skill-card__icon">{{ skill.symbol }}</div>
+          <div class="skill-card__body">
+            <h3>{{ skill.name }}</h3>
+            <p>{{ skill.description }}</p>
+          </div>
+          <div class="skill-meter">
+            <div class="skill-meter__label">
+              <span>Proficiency</span>
+              <strong>{{ skill.level }}%</strong>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__fill" style="width: {{ skill.level }}%"></span>
+            </div>
+          </div>
+          <div class="tag-list">
+            {% for technology in skill.technologies %}
+              <span class="tag">{{ technology }}</span>
+            {% endfor %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

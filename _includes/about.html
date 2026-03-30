@@ -1,0 +1,42 @@
+<section id="about" class="section section--surface">
+  <div class="container">
+    <div class="section-heading">
+      <h2>{{ site.data.site.about.title }}</h2>
+      <div class="section-heading__rule"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-grid__media">
+        <img
+          src="{{ site.data.site.about.image.url }}"
+          alt="{{ site.data.site.about.image.alt }}"
+          class="about-grid__image"
+        >
+      </div>
+      <div class="about-grid__content">
+        {% for paragraph in site.data.site.about.paragraphs %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+        <div class="feature-list">
+          {% for item in site.data.site.about.highlights %}
+            <article class="feature-card">
+              <div class="feature-card__badge">
+                {% case item.title %}
+                  {% when "Clean Code" %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml size-6 text-white" data-fg-d7ai19="1.16:1.3103:/src/app/components/About.tsx:59:25:2592:38:e:Icon" data-fgid-d7ai19=":r1s:"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+                  {% when "Creative Design" %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette size-6 text-white" data-fg-d7ai19="1.16:1.3103:/src/app/components/About.tsx:59:25:2592:38:e:Icon" data-fgid-d7ai19=":r23:"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></svg>
+                  {% else %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket size-6 text-white" data-fg-d7ai19="1.16:1.3103:/src/app/components/About.tsx:59:25:2592:38:e:Icon" data-fgid-d7ai19=":r2a:"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+                {% endcase %}
+              </div>
+              <div>
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

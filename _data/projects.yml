@@ -1,0 +1,27 @@
+- title: Texts With
+  description: A fully responsive chat tool enabling users to communicate, using AI, with religious figures, authors, and historical figures.
+  image: https://textwith.me/cdn-cgi/image/format=auto,onerror=redirect/img/en/apps-banner.jpg
+  tags:
+    - React/Remix
+    - MaterialUI
+    - TypeScript
+    - Redux
+  live_url: https://textwith.app
+- title: Teachee
+  description: A fully responsive educational tool enabling users to learn, using AI, any chosen subject.
+  image: /assets/images/teachee.png
+  tags:
+    - React/Next
+    - TypeScript
+    - TailwindCSS
+    - OpenAI
+  live_url: https://teachee.org
+- title: Catloaf Art
+  description: A minimalist portfolio showcasing my paintings and ability to design sites from the ground up.
+  image: /assets/images/catloafart.png
+  tags:
+    - React/Next
+    - Firebase
+    - JavaScript
+    - Redux
+  live_url: https://catloaf.art

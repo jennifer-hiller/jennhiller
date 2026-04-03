@@ -1,89 +1,508 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    
+    
+    
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+    <title>Web Developer in Los Angeles | Jennifer Hiller</title>
+    <meta name="description" content="Jennifer Hiller is a Los Angeles web developer building responsive, conversion-focused websites for businesses, creators, and growing brands.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jennhiller.com/">
+    <link rel="icon" href="/public/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+    <link rel="manifest" href="/public/site.webmanifest">
+    <link rel="mask-icon" href="/public/safari-pinned-tab.svg" color="#5bbad5">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="JennHiller.com">
+    <meta property="og:title" content="Web Developer in Los Angeles | Jennifer Hiller">
+    <meta property="og:description" content="Jennifer Hiller is a Los Angeles web developer building responsive, conversion-focused websites for businesses, creators, and growing brands.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jennhiller.com/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1763568258338-94886e7533ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBjb2RpbmclMjBzZXR1cHxlbnwxfHx8fDE3NzQ3MDg5OTV8MA&ixlib=rb-4.1.0&q=80&w=1200&utm_source=figma&utm_medium=referral">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Web Developer in Los Angeles | Jennifer Hiller">
+    <meta name="twitter:description" content="Jennifer Hiller is a Los Angeles web developer building responsive, conversion-focused websites for businesses, creators, and growing brands.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1763568258338-94886e7533ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBjb2RpbmclMjBzZXR1cHxlbnwxfHx8fDE3NzQ3MDg5OTV8MA&ixlib=rb-4.1.0&q=80&w=1200&utm_source=figma&utm_medium=referral">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://jennhiller.com/#person",
+            "name": "Jennifer Hiller",
+            "url": "https://jennhiller.com/",
+            "jobTitle": "Web Developer",
+            "description": "Jennifer Hiller is a Los Angeles web developer building responsive, conversion-focused websites for businesses, creators, and growing brands.",
+            "homeLocation": {
+              "@type": "Place",
+              "name": "Los Angeles, California"
+            },
+            "sameAs": ["https://github.com/jennifer-hiller","https://www.linkedin.com/in/jennhi/"]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://jennhiller.com/#service",
+            "name": "Web Developer in Los Angeles",
+            "serviceType": "Web Development",
+            "areaServed": {
+              "@type": "City",
+              "name": "Los Angeles, California"
+            },
+            "provider": {
+              "@id": "https://jennhiller.com/#person"
+            },
+            "url": "https://jennhiller.com/#contact",
+            "description": "Jennifer Hiller is a Los Angeles web developer building responsive, conversion-focused websites for businesses, creators, and growing brands."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://jennhiller.com/#website",
+            "name": "JennHiller.com",
+            "url": "https://jennhiller.com/",
+            "description": "Jennifer Hiller is a Los Angeles web developer building responsive, conversion-focused websites for businesses, creators, and growing brands."
+          }
+        ]
       }
-    </style>
+    </script>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <header class="site-header" data-site-header>
+  <nav class="container nav" aria-label="Primary">
+    <a class="brand" href="#hero">JennHiller.com</a>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-menu-toggle
+    >
+      <span class="menu-toggle__line"></span>
+      <span class="menu-toggle__line"></span>
+      <span class="menu-toggle__line"></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <div class="nav-links nav-links--desktop">
+      
+        <a href="#hero">Home</a>
+      
+        <a href="#about">About</a>
+      
+        <a href="#skills">Skills</a>
+      
+        <a href="#projects">Projects</a>
+      
+        <a href="#contact">Contact</a>
+      
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </nav>
+  <div id="mobile-menu" class="nav-links nav-links--mobile" hidden data-mobile-menu>
+    
+      <a href="#hero">Home</a>
+    
+      <a href="#about">About</a>
+    
+      <a href="#skills">Skills</a>
+    
+      <a href="#projects">Projects</a>
+    
+      <a href="#contact">Contact</a>
+    
+  </div>
+</header>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<main>
+<section id="hero" class="hero section section--hero">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <div class="hero__copy">
+        <p class="hero__eyebrow">Hi, I'm Jennifer Hiller.</p>
+        <h1 class="hero__title">
+          Web Developer in
+          <span>Los Angeles</span>
+        </h1>
+        <p class="hero__subtitle">I design and build responsive websites that look polished, load fast, and turn visitors into inquiries.</p>
+      </div>
+      <p class="hero__description">If you need a modern site for your business, portfolio, or next launch, I can help you create a clear, conversion-focused web presence that feels as strong as your work.</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#projects">View My Work</a>
+        <a class="button button--secondary" href="#contact">Get in Touch</a>
+      </div>
+      <div class="hero__social" aria-label="Social links">
+        <a href="https://github.com/jennifer-hiller" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github size-6 text-gray-700" data-fg-eh6d22="1.15:1.3949:/src/app/components/Hero.tsx:59:17:2341:43:e:Github::::::t8f" data-fgid-eh6d22=":r12:"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a>
+        <a href="https://www.linkedin.com/in/jennhi/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin size-6 text-gray-700" data-fg-eh6d24="1.15:1.3949:/src/app/components/Hero.tsx:67:17:2664:45:e:Linkedin::::::BytQ" data-fgid-eh6d24=":r14:"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <div class="hero__image-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1763568258338-94886e7533ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBjb2RpbmclMjBzZXR1cHxlbnwxfHx8fDE3NzQ3MDg5OTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          alt="Developer workspace"
+          class="hero__image"
+        >
+      </div>
+      <div class="hero__glow hero__glow--primary"></div>
+      <div class="hero__glow hero__glow--secondary"></div>
+    </div>
+  </div>
+</section>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+  <section id="about" class="section section--surface">
+  <div class="container">
+    <div class="section-heading">
+      <h2>About Me</h2>
+      <div class="section-heading__rule"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-grid__media">
+        <img
+          src="https://images.unsplash.com/photo-1760548425425-e42e77fa38f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NzQ2MjE0MDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          alt="Modern web development"
+          class="about-grid__image"
+        >
+      </div>
+      <div class="about-grid__content">
+        
+          <p>I'm a Los Angeles web developer focused on creating exceptional digital experiences with clean HTML, CSS, and JavaScript. I build sites that are easy to use, easy to maintain, and aligned with real business goals.</p>
+        
+          <p>Great websites do more than look good. They clarify your offer, build trust quickly, and give visitors a simple path to reach out when they're ready to start a project.</p>
+        
+        <div class="feature-list">
+          
+            <article class="feature-card">
+              <div class="feature-card__badge">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml size-6 text-white" data-fg-d7ai19="1.16:1.3103:/src/app/components/About.tsx:59:25:2592:38:e:Icon" data-fgid-d7ai19=":r1s:"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+                  
+              </div>
+              <div>
+                <h3>Clean Code</h3>
+                <p>Writing semantic, maintainable code that follows best practices</p>
+              </div>
+            </article>
+          
+            <article class="feature-card">
+              <div class="feature-card__badge">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette size-6 text-white" data-fg-d7ai19="1.16:1.3103:/src/app/components/About.tsx:59:25:2592:38:e:Icon" data-fgid-d7ai19=":r23:"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></svg>
+                  
+              </div>
+              <div>
+                <h3>Creative Design</h3>
+                <p>Transforming ideas into beautiful, intuitive user interfaces</p>
+              </div>
+            </article>
+          
+            <article class="feature-card">
+              <div class="feature-card__badge">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket size-6 text-white" data-fg-d7ai19="1.16:1.3103:/src/app/components/About.tsx:59:25:2592:38:e:Icon" data-fgid-d7ai19=":r2a:"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+                
+              </div>
+              <div>
+                <h3>Performance</h3>
+                <p>Building fast, optimized websites that deliver great experiences</p>
+              </div>
+            </article>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="skills" class="section section--muted">
+  <div class="container">
+    <div class="section-heading">
+      <h2>My Skills</h2>
+      <div class="section-heading__rule"></div>
+      <p>
+        Specialized in the core technologies of web development, constantly
+        learning and improving my craft.
+      </p>
+    </div>
+    <div class="skills-grid">
+      
+        <article class="skill-card" id="skill-HTML">
+          <div class="skill-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-code2 lucide-file-code-2 size-8 text-white" data-fg-crmd13="1.17:1.3811:/src/app/components/Skills.tsx:56:21:2136:38:e:Icon" data-fgid-crmd13=":r2q:"><path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="m5 12-3 3 3 3"></path><path d="m9 18 3-3-3-3"></path></svg></div>
+          <div class="skill-card__body">
+            <h3>HTML</h3>
+            <p>Semantic markup, accessibility, and SEO best practices</p>
+          </div>
+          <div class="skill-meter">
+            <div class="skill-meter__label">
+              <span>Proficiency</span>
+              <strong>95%</strong>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__fill" style="width: 95%"></span>
+            </div>
+          </div>
+          <div class="tag-list">
+            
+              <span class="tag">HTML5</span>
+            
+              <span class="tag">Semantic Elements</span>
+            
+              <span class="tag">Web Components</span>
+            
+              <span class="tag">SEO</span>
+            
+          </div>
+        </article>
+      
+        <article class="skill-card" id="skill-CSS">
+          <div class="skill-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panels-top-left size-8 text-white" data-fg-crmd13="1.17:1.3811:/src/app/components/Skills.tsx:56:21:2136:38:e:Icon" data-fgid-crmd13=":r3d:"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg></div>
+          <div class="skill-card__body">
+            <h3>CSS</h3>
+            <p>Modern layouts, animations, and responsive design</p>
+          </div>
+          <div class="skill-meter">
+            <div class="skill-meter__label">
+              <span>Proficiency</span>
+              <strong>90%</strong>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__fill" style="width: 90%"></span>
+            </div>
+          </div>
+          <div class="tag-list">
+            
+              <span class="tag">CSS3</span>
+            
+              <span class="tag">Flexbox</span>
+            
+              <span class="tag">Grid</span>
+            
+              <span class="tag">Animations</span>
+            
+              <span class="tag">Sass</span>
+            
+          </div>
+        </article>
+      
+        <article class="skill-card" id="skill-JavaScript">
+          <div class="skill-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles size-8 text-white" data-fg-crmd13="1.17:1.3811:/src/app/components/Skills.tsx:56:21:2136:38:e:Icon" data-fgid-crmd13=":r41:"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg></div>
+          <div class="skill-card__body">
+            <h3>JavaScript</h3>
+            <p>ES6+, DOM manipulation, and interactive experiences</p>
+          </div>
+          <div class="skill-meter">
+            <div class="skill-meter__label">
+              <span>Proficiency</span>
+              <strong>88%</strong>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__fill" style="width: 88%"></span>
+            </div>
+          </div>
+          <div class="tag-list">
+            
+              <span class="tag">ES6+</span>
+            
+              <span class="tag">DOM API</span>
+            
+              <span class="tag">Async/Await</span>
+            
+              <span class="tag">Fetch API</span>
+            
+              <span class="tag">Modules</span>
+            
+          </div>
+        </article>
+      
+    </div>
+  </div>
+</section>
+
+  <section id="projects" class="section section--surface">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Featured Projects</h2>
+      <div class="section-heading__rule"></div>
+      <p>
+        Here are some of my recent projects showcasing my skills in web
+        development and design.
+      </p>
+    </div>
+    <div class="projects-grid">
+      
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="https://textwith.me/cdn-cgi/image/format=auto,onerror=redirect/img/en/apps-banner.jpg" alt="Texts With">
+          </div>
+          <div class="project-card__body">
+            <h3>Texts With</h3>
+            <p>A fully responsive chat tool enabling users to communicate, using AI, with religious figures, authors, and historical figures.</p>
+            <div class="tag-list tag-list--project">
+              
+                <span class="tag tag--accent">React/Remix</span>
+              
+                <span class="tag tag--accent">MaterialUI</span>
+              
+                <span class="tag tag--accent">TypeScript</span>
+              
+                <span class="tag tag--accent">Redux</span>
+              
+            </div>
+            <div class="project-card__actions">
+              <a class="button button--secondary" href="https://textwith.app" target="_blank" rel="noopener noreferrer">
+                Live Link
+              </a>
+            </div>
+          </div>
+        </article>
+      
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="/assets/images/teachee.png" alt="Teachee">
+          </div>
+          <div class="project-card__body">
+            <h3>Teachee</h3>
+            <p>A fully responsive educational tool enabling users to learn, using AI, any chosen subject.</p>
+            <div class="tag-list tag-list--project">
+              
+                <span class="tag tag--accent">React/Next</span>
+              
+                <span class="tag tag--accent">TypeScript</span>
+              
+                <span class="tag tag--accent">TailwindCSS</span>
+              
+                <span class="tag tag--accent">OpenAI</span>
+              
+            </div>
+            <div class="project-card__actions">
+              <a class="button button--secondary" href="https://teachee.org" target="_blank" rel="noopener noreferrer">
+                Live Link
+              </a>
+            </div>
+          </div>
+        </article>
+      
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="/assets/images/catloafart.png" alt="Catloaf Art">
+          </div>
+          <div class="project-card__body">
+            <h3>Catloaf Art</h3>
+            <p>A minimalist portfolio showcasing my paintings and ability to design sites from the ground up.</p>
+            <div class="tag-list tag-list--project">
+              
+                <span class="tag tag--accent">React/Next</span>
+              
+                <span class="tag tag--accent">Firebase</span>
+              
+                <span class="tag tag--accent">JavaScript</span>
+              
+                <span class="tag tag--accent">Redux</span>
+              
+            </div>
+            <div class="project-card__actions">
+              <a class="button button--secondary" href="https://catloaf.art" target="_blank" rel="noopener noreferrer">
+                Live Link
+              </a>
+            </div>
+          </div>
+        </article>
+      
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="section section--hero">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Start Your Next Website Project</h2>
+      <div class="section-heading__rule"></div>
+      <p>Looking for a web developer in Los Angeles? Use the form below to tell me about your project, timeline, and goals.</p>
+    </div>
+    <div class="contact-form-card">
+      <p class="contact-form__intro">I focus on websites that present your work clearly and turn more visitors into qualified inquiries.</p>
+      <form class="contact-form" data-contact-form method="POST" novalidate>
+        <input
+          type="hidden"
+          name="access_key"
+          value="a9b30f8f-d2cd-470f-80d3-2daface116b3"
+        >
+        <input
+          type="hidden"
+          name="subject"
+          value="New portfolio contact form submission"
+        >
+        <input
+          type="hidden"
+          name="from_name"
+          value="JennHiller.com"
+        >
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="contact-form__honeypot"
+          tabindex="-1"
+          autocomplete="off"
+        >
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" placeholder="John Doe" required>
+        <label for="email">Your Email</label>
+        <input id="email" name="email" type="email" placeholder="john@example.com" required>
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Tell me about your project..."
+          required
+        ></textarea>
+        <button class="button button--primary button--full" type="submit" data-submit-button>
+          Send Message
+        </button>
+        <p class="contact-form__status" data-form-status aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <h4>Quick Links</h4>
+        <div class="site-footer__links">
+          
+            <a href="#about">About</a>
+          
+            <a href="#skills">Skills</a>
+          
+            <a href="#projects">Projects</a>
+          
+            <a href="#contact">Contact</a>
+          
+        </div>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <div class="site-footer__social">
+          <a href="https://github.com/jennifer-hiller" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github size-5" data-fg-bb4428="1.20:1.3319:/src/app/components/Footer.tsx:61:17:2090:29:e:Github::::::t8f" data-fgid-bb4428=":r8u:"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a>
+          <a href="https://www.linkedin.com/in/jennhi/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin size-5" data-fg-bb4430="1.20:1.3319:/src/app/components/Footer.tsx:69:17:2399:31:e:Linkedin::::::BytQ" data-fgid-bb4430=":r90:"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; 2026 All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/assets/js/site.js" defer></script>
   </body>
 </html>

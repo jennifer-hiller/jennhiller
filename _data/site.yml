@@ -1,11 +1,26 @@
 brand:
   name: JennHiller.com
+  person_name: Jennifer Hiller
+
+seo:
+  locale: en_US
+  title: Jennifer Hiller | Web Developer in Los Angeles
+  description: Los Angeles web developer creating responsive, conversion-focused websites for businesses, creators, and growing brands.
+  keyword: Web Developer in Los Angeles
+  service_name: Web Developer in Los Angeles
+  service_type: Web Development
+  area_served: Los Angeles, California
+  social_image: https://images.unsplash.com/photo-1763568258338-94886e7533ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBjb2RpbmclMjBzZXR1cHxlbnwxfHx8fDE3NzQ3MDg5OTV8MA&ixlib=rb-4.1.0&q=80&w=1200&utm_source=figma&utm_medium=referral
+  same_as:
+    - https://github.com/jennifer-hiller
+    - https://www.linkedin.com/in/jennhi/
 
 hero:
-  headline_prefix: Hi, I'm
-  headline_name: Jennifer Hiller
-  subtitle: Web Developer & Site Creator
-  description: I craft beautiful, responsive websites using HTML, CSS, and JavaScript. Passionate about creating seamless user experiences and bringing creative ideas to life through code.
+  intro: Hi, I'm Jennifer Hiller.
+  title_prefix: Web Developer in
+  title_highlight: Los Angeles
+  subtitle: I design and build responsive websites that look polished, load fast, and turn visitors into inquiries.
+  description: If you need a modern site for your business, portfolio, or next launch, I can help you create a clear, conversion-focused web presence that feels as strong as your work.
   image:
     url: https://images.unsplash.com/photo-1763568258338-94886e7533ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBjb2RpbmclMjBzZXR1cHxlbnwxfHx8fDE3NzQ3MDg5OTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral
     alt: Developer workspace
@@ -13,8 +28,8 @@ hero:
 about:
   title: About Me
   paragraphs:
-    - I'm a passionate web developer dedicated to creating exceptional digital experiences. With expertise in HTML, CSS, and JavaScript, I bring designs to life with pixel-perfect precision and smooth interactions.
-    - My journey in web development has taught me that great websites are more than just code—they're about solving problems, telling stories, and creating meaningful connections with users.
+    - I'm a Los Angeles web developer focused on creating exceptional digital experiences with clean HTML, CSS, and JavaScript. I build sites that are easy to use, easy to maintain, and aligned with real business goals.
+    - Great websites do more than look good. They clarify your offer, build trust quickly, and give visitors a simple path to reach out when they're ready to start a project.
   image:
     url: https://images.unsplash.com/photo-1760548425425-e42e77fa38f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NzQ2MjE0MDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral
     alt: Modern web development
@@ -27,12 +42,12 @@ about:
       description: Building fast, optimized websites that deliver great experiences
 
 contact:
-  headline: Get In Touch
-  description: Have a project in mind? Let's work together to create something amazing!
-  intro: I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+  headline: Start Your Next Website Project
+  description: Looking for a web developer in Los Angeles? Use the form below to tell me about your project, timeline, and goals.
+  intro: I focus on websites that present your work clearly and turn more visitors into qualified inquiries.
   email: your.email@example.com
   phone: +1 (555) 123-4567
-  location: San Francisco, CA
+  location: Los Angeles, CA
 
 social:
   github: https://github.com/jennifer-hiller

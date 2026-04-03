@@ -1,10 +1,12 @@
-title: Portfolio
-description: Personal portfolio website
-url: ""
+title: Jennifer Hiller | Web Developer in Los Angeles
+description: Los Angeles web developer building responsive, conversion-focused websites for businesses, creators, and growing brands.
+url: "https://jennhiller.com"
 baseurl: ""
 markdown: kramdown
 permalink: pretty
 collections_dir: .
+include:
+  - robots.txt
 exclude:
   - node_modules
   - README.old.md

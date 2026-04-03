@@ -1,22 +1,78 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% assign meta_title = page.title | default: site.data.site.seo.title | default: site.title %}
+    {% assign meta_description = page.description | default: site.data.site.seo.description | default: site.description %}
+    {% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
+    {% assign social_image = page.image | default: site.data.site.seo.social_image %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title | default: site.title | escape }}</title>
-    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <title>{{ meta_title | escape }}</title>
+    <meta name="description" content="{{ meta_description | escape }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ canonical_url }}">
     <link rel="icon" href="{{ '/public/favicon.ico' | relative_url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/public/favicon-16x16.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/public/favicon-32x32.png' | relative_url }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/public/apple-touch-icon.png' | relative_url }}">
     <link rel="manifest" href="{{ '/public/site.webmanifest' | relative_url }}">
     <link rel="mask-icon" href="{{ '/public/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5">
-    <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
-    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:locale" content="{{ site.data.site.seo.locale }}">
+    <meta property="og:site_name" content="{{ site.data.site.brand.name | escape }}">
+    <meta property="og:title" content="{{ meta_title | escape }}">
+    <meta property="og:description" content="{{ meta_description | escape }}">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:image" content="{{ social_image }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ meta_title | escape }}">
+    <meta name="twitter:description" content="{{ meta_description | escape }}">
+    <meta name="twitter:image" content="{{ social_image }}">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "{{ canonical_url }}#person",
+            "name": "{{ site.data.site.brand.person_name | escape }}",
+            "url": "{{ canonical_url }}",
+            "jobTitle": "Web Developer",
+            "description": "{{ meta_description | escape }}",
+            "homeLocation": {
+              "@type": "Place",
+              "name": "{{ site.data.site.seo.area_served | escape }}"
+            },
+            "sameAs": {{ site.data.site.seo.same_as | jsonify }}
+          },
+          {
+            "@type": "Service",
+            "@id": "{{ canonical_url }}#service",
+            "name": "{{ site.data.site.seo.service_name | escape }}",
+            "serviceType": "{{ site.data.site.seo.service_type | escape }}",
+            "areaServed": {
+              "@type": "City",
+              "name": "{{ site.data.site.seo.area_served | escape }}"
+            },
+            "provider": {
+              "@id": "{{ canonical_url }}#person"
+            },
+            "url": "{{ canonical_url }}#contact",
+            "description": "{{ meta_description | escape }}"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "{{ canonical_url }}#website",
+            "name": "{{ site.data.site.brand.name | escape }}",
+            "url": "{{ canonical_url }}",
+            "description": "{{ meta_description | escape }}"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     {{ content }}
